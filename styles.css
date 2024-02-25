@@ -1,0 +1,150 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsla(179, 62%, 43%, 0.9);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: var(--light-gray);
+    font-family: "Karla";
+    line-height: 1.5;
+    font-size: 16px;
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 20px;
+    height: 100%;
+}
+
+#container {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    display: grid;
+}
+
+header,
+main,
+footer {
+    padding: 30px;
+}
+
+h1 {
+    color: var(--cyan);
+    font-size: 1.2em;
+}
+
+h2 {
+    color: var(--bright-yellow);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+h3 {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+header {
+    background-color: var(--white);
+    grid-area: header;
+    line-height: 2;
+}
+
+header p {
+    color: var(--grayish-blue);
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+main {
+    background-color: var(--cyan);
+    color: var(--white);
+    grid-area: main;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#price-amount {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#price-period {
+    opacity: 0.4;
+}
+
+#price-full-access {
+    opacity: 0.8;
+}
+
+#sign-up {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--bright-yellow);
+    margin-top: 30px;
+    color: var(--white);
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 15px;
+    width: 100%;
+    opacity: 1;
+}
+
+footer {
+    background-color: var(--light-cyan);
+    color: var(--white);
+    grid-area: footer;
+}
+
+footer ul {
+    list-style: none;
+    opacity: 0.6;
+}
+
+/* Mobile breakpoint */
+@media only screen and (max-width: 767px) {
+    #container {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        max-height: 100%;
+    }
+
+    header p br {
+        display: none;
+    }
+    
+}
+
+/* Desktop breakpoint */
+@media only screen and (min-width: 768px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main footer";
+        min-width: 600px;
+        width: 50%;
+    }
+}
