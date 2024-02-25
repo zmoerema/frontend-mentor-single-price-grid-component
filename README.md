@@ -23,7 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot.jpg)
+#### Desktop view
+
+![screenshot-desktop](./screenshots/screenshot-desktop.png)
+
+#### Mobile view
+
+![screenshot-mobile](./screenshots/screenshot-mobile.png)
 
 ### Links
 
