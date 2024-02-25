@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 <!-- - Solution URL: [Frontend Mentor](https://your-solution-url.com) -->
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://zmoerema.github.io/frontend-mentor-single-price-grid-component/)
 
 ## My process
 
